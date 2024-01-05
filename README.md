@@ -1,7 +1,13 @@
 # Portfolio Project
 
 ## Introduction
-Welcome to my personal portfolio project, a web application built using Vite and React. This project showcases my skills, projects, and experiences as a programmer
+Welcome to my personal portfolio project, a web application built using Vite and React. This project showcases my skills, projects, and experiences as a programmer.
+
+To view the prototype first go to the figma I've created for this project 
+https://www.figma.com/file/YRQXBYoCVgcCiCUUzTDBax/Ben's-Bog?type=design&node-id=0%3A1&mode=design&t=fzyAfQ1p1tB6Q7Q1-1
+
+Then, on the figma select the frame "Final Layout - desktop" and click the arrow in the top right hand corner for "present". This will let you see a prototype of the website I am programming until the live site is finished. 
+
 
 ## Features
 - **Performance Optimized:** Leverages Vite for efficient bundling and fast loading times.
