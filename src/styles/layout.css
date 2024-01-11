@@ -1,0 +1,64 @@
+.nav-bar {
+    align-items: center;
+    background-color: #ede0d4;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100px;
+    justify-content: space-around;
+    padding: 0px 150px;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .nav-bar .frame {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+  }
+  
+  .nav-bar .div-wrapper {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    position: relative;
+  }
+  
+  .nav-bar .text-wrapper {
+    color: #000000;
+    font-family: var(--nav-bar-font-family);
+    font-size: var(--nav-bar-font-size);
+    font-style: var(--nav-bar-font-style);
+    font-weight: var(--nav-bar-font-weight);
+    letter-spacing: var(--nav-bar-letter-spacing);
+    line-height: var(--nav-bar-line-height);
+    position: relative;
+    width: fit-content;
+  }
+  
+  .nav-bar .div {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 535px;
+  }
+  
+  .nav-bar .nav-item-instance {
+    align-self: stretch !important;
+    display: flex !important;
+    flex: 1 !important;
+    flex-grow: 1 !important;
+  }
+  
+  .nav-bar .design-component-instance-node {
+    margin-top: unset !important;
+  }
+  

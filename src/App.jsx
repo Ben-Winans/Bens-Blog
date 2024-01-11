@@ -1,19 +1,12 @@
-import { useState } from 'react'
-import { NavBar } from "./components/NavBar";
-import "./App.css"
+import NavBar from "./components/NavBar";
+import About from "./components/About";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <NavBar />
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <About />
     </>
   )
 }
