@@ -1,0 +1,18 @@
+.worksContainer {
+    /* Styles for the overall container */
+}
+
+.worksTitle {
+    /* Styles for the title */
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    /* Styles for individual cards */
+    width: 30%; /* Example width, adjust as needed */
+    /* Add more styling for cards here */
+}
