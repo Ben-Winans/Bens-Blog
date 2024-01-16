@@ -21,8 +21,8 @@ const About = () => {
                     <img src={aboutImage} alt="Me and my beloved cat sushi" />
                 </div>
                 <div className={styles.aboutButtonRow} >
-                    <button className={styles.button}>Button 1</button>
-                    <button className={styles.button}>Button 2</button>
+                    <button className={styles.LinkedInButton}>LinkedIn</button>
+                    <button className={styles.GitHubButton}>GitHub</button>
                 </div>
             </div>
         </div>

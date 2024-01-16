@@ -4,6 +4,7 @@ h1 {
     font-family: Inter;
     font-size: 40px;
     font-style: normal;
+    font-weight: bolder;
     line-height: normal;
 }
 
@@ -20,32 +21,66 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 740px;
+    height: 700px;
     padding: 40px 150px;
-    gap: 27px;
-    flex-shrink: 0;
+    gap: 80px;
+    flex-shrink: 1;
 }
 
+/* About section split into left and right containers */
+
+
+/* About section left container and contents */
 .leftSection {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     align-items: flex-start;
     align-self: stretch;
+    flex-shrink: 1;
 }
+
+.aboutTitle {
+    display: flex;
+    align-items: flex-start; /* Align items to the start vertically */
+    padding-right: 93.525px;
+    margin-top: 0; /* Remove any top margin */
+    flex-grow: 0; /* Do not allow it to grow */
+}
+
+.aboutBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Distribute space evenly */
+    flex-grow: 1; /* Allow this section to grow to fill space */
+}
+
+.aboutBody p {
+    margin-top: 10px; /* Adjust top margin as needed */
+    margin-bottom: 10px; /* Adjust bottom margin as needed */
+    flex-grow: 1; /* Allows each paragraph to grow equally */
+}
+
+/* End */
+
+
+/* About section Right container and contents */
 
 .rightSection {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     align-self: stretch;
+    flex-shrink: 1;
 }
 
 .imageCard {
-    width: 559px; /* Set width */
-    height: 511px; /* Set height */
+    width: 520px;
+    height: 560px;
     overflow: hidden; /* Ensure content doesn't overflow */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
 }
 
 .imageCard img {
@@ -54,7 +89,59 @@ body {
     object-fit: cover; /* Cover the area without stretching the image */
 }
 
-.button {
-    /* Style for your buttons */
-    margin-top: 10px; /* Space between buttons */
+.aboutButtonRow {
+    display: flex;
+    justify-content: space-between; /* Space out buttons evenly */
+    align-items: center; /* Center buttons vertically */
+    flex-grow: 1; /* Allow this section to grow */
+    width: 100%; /* Take full width of its container */
 }
+
+.LinkedInButton{
+    border-radius: 5px;
+    border: 1px solid #838383;
+    background: #7F5539;
+
+    display: flex;
+    width: 220px;
+    height: 65px;
+    padding: 9px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    color: #EDE0D4;
+
+    /* Button */
+    font-family: Anonymous Pro;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.GitHubButton{
+
+
+    display: flex;
+    width: 220px;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 5px;
+    border: 1px solid #838383;
+    background: #B08968;
+
+    color: #EDE0D4;
+
+    /* Button */
+    font-family: Anonymous Pro;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* End */
