@@ -6,7 +6,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
+    position: fixed;
+    top: 0; /* Ensure it sticks to the top */
+    left: 0; /* Align to the left edge */
+    right: 0; /* Align to the right edge */
+    z-index: 1000; /* Ensure it stays above other content */
+    
     /* unsure if I need these */
     align-self: stretch;
     flex-shrink: 0;

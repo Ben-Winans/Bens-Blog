@@ -1,6 +1,7 @@
 .skillsContainer {
     display: flex;
     padding-top: 50px;
+    min-height: 700px;
     flex-direction: column;
     align-items: center;
     gap: 50px;
@@ -9,8 +10,33 @@
 }
 
 .skillsTitle {
-    font-size: 24px;
+    font-family: "Anonymous Pro";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: black;
     margin-bottom: 20px;
+}
+
+.skillsColumn h3{
+    font-family: "Anonymous Pro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: black;
+}
+
+.skillsColumn p{
+    color: #000;
+    text-align: center;
+    /* Body */
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .skillsContent {
@@ -29,19 +55,33 @@
 
 .skillsColumn p {
     text-align: left;
-    margin-bottom: 5px;
+    margin: 0px;
 }
 
 .resumeButtonContainer {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.resumeButton {
-    padding: 10px 20px;
-    background-color: blue;
-    color: white;
-    border: none;
+
+.resumeButton{
+
+    display: flex;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+
     border-radius: 5px;
-    cursor: pointer;
-}
+    border: 1px solid #838383;
+    background: #B08968;
 
+    color: #EDE0D4;
+
+    /* Button */
+    font-family: "Anonymous Pro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
