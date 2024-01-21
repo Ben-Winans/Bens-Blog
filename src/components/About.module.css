@@ -16,6 +16,12 @@ body {
     line-height: normal;
 }
 
+a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Optional: Inherits the text color from the parent element */
+}
+
+
 .aboutContainer {
     margin-top: 100px;
     display: flex;
@@ -23,7 +29,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 700px; 
-    padding: 40px 150px;
+    padding: 0px 150px;
     gap: 80px;
     flex-shrink: 1;
 }
@@ -81,6 +87,10 @@ body {
     flex-grow: 1; /* Allows each paragraph to grow equally */
 }
 
+.hireMe {
+    margin-left: 10px;
+}
+
 /* End */
 
 
@@ -99,70 +109,78 @@ body {
 .imageCard {
     width: 520px;
     height: 560px;
-    overflow: hidden; /* Ensure content doesn't overflow */
+    overflow: hidden; 
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
 }
 
 .imageCard img {
-    width: 100%; /* Make image fill the div */
-    height: 100%; /* Maintain the aspect ratio */
-    object-fit: cover; /* Cover the area without stretching the image */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
 }
 
 .aboutButtonRow {
     display: flex;
-    justify-content: space-between; /* Space out buttons evenly */
-    align-items: center; /* Center buttons vertically */
-    flex-grow: 1; /* Allow this section to grow */
-    width: 100%; /* Take full width of its container */
+    justify-content: space-between; 
+    align-items: center; 
+    flex-grow: 1; 
+    width: 100%; 
 }
 
-.LinkedInButton{
+.LinkedInButton, .GitHubButton {
+    /* Shared Styles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 220px;
+    height: 65px;
     border-radius: 5px;
     border: 1px solid #838383;
+    color: #EDE0D4;
+    font-family: Anonymous Pro;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative; 
+    overflow: hidden;
+    cursor: pointer; 
+}
+
+.LinkedInButton {
     background: #7F5539;
-
-    display: flex;
-    width: 220px;
-    height: 65px;
-    padding: 9px 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-    color: #EDE0D4;
-
-    /* Button */
-    font-family: Anonymous Pro;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
 }
 
-.GitHubButton{
-
-
-    display: flex;
-    width: 220px;
-    height: 65px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-    border-radius: 5px;
-    border: 1px solid #838383;
+.GitHubButton {
     background: #B08968;
-
-    color: #EDE0D4;
-
-    /* Button */
-    font-family: Anonymous Pro;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
 }
+
+.LinkedInButton span, .GitHubButton span {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.LinkedInButton::after, .GitHubButton::after {
+    content: '';
+    position: absolute;
+    bottom: 15px; /* Adjust as needed */
+    height: 2px; /* Adjust thickness of underline */
+    background-color: currentColor; /* Use the current text color */
+    transition: width 0.3s;
+    width: 0; /* Start with no width */
+    left: 50%; /* Center at the start */
+    transform: translateX(-50%); /* Center alignment */
+}
+
+.LinkedInButton:hover::after, .GitHubButton:hover::after {
+    width: calc(100% - 50px); /* Adjust width as needed */
+    left: 25px; /* Align with the text start */
+    transform: translateX(0); /* Reset transform on hover */
+}
+
 
 /* End */

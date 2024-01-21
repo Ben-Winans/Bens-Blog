@@ -1,3 +1,10 @@
+/* NavBar.module.css */
+
+.hamburger {
+    display: none; /* Hide hamburger by default */
+}
+
+
 .navbar {
     background-color: #EDE0D4;
     display: flex;
@@ -7,15 +14,10 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 0; /* Ensure it sticks to the top */
-    left: 0; /* Align to the left edge */
-    right: 0; /* Align to the right edge */
-    z-index: 1000; /* Ensure it stays above other content */
-    
-    /* unsure if I need these */
-    align-self: stretch;
-    flex-shrink: 0;
-
+    top: 0;
+    left: 0;
+    right: 0; 
+    z-index: 4; 
 
     /* writting style */
     font-family: Poppins;
@@ -38,7 +40,7 @@
     align-items: flex-start;
     list-style: none; 
     width: 520px;
-    padding: 0; /* Remove default padding */
+    padding: 0; 
 }
 
 .navItem {

@@ -1,0 +1,41 @@
+
+/* Ensure the parent containers are relatively positioned */
+.About, .Skills, .Contact {
+  position: relative;
+}
+
+/* Triangle between About and Skills Sections */
+.About::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -150px;
+  height: 150px;
+  background: linear-gradient(to top right, transparent 50%, #EDE0D4 50%);
+  z-index: 1;
+}
+
+/* Triangle between Skills and Works Sections */
+.Skills::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 150px;
+  background: linear-gradient(to bottom left, transparent 50%, #EDE0D4 50%);
+  z-index: 1;
+}
+
+/* Triangle between Contact and Works Sections */
+.Contact::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 150px;
+  height: 150px;
+  background: linear-gradient(to bottom right, transparent 50%, #E6CCB2 50%);
+  z-index: 1;
+}

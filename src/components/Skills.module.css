@@ -1,6 +1,7 @@
 .skillsContainer {
     display: flex;
-    padding-top: 50px;
+    padding-top: 150px;
+    padding-bottom: 150px; 
     min-height: 700px;
     flex-direction: column;
     align-items: center;

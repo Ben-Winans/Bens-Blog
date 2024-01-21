@@ -11,16 +11,16 @@ function App() {
   return (
     <>
       <NavBar />
-      <div className={styles.About}>
+      <div id="about" className={styles.About}>
         <About />
       </div>
-      <div className={styles.Skills}>
+      <div id="skills" className={styles.Skills}>
         <Skills />
       </div>
-      <div className={styles.Works}>
+      <div id="projects" className={styles.Works}>
         <Works />
       </div>
-      <div className={styles.Contact}>
+      <div id="contact" className={styles.Contact}>
         <Contact />
       </div>
     </>
