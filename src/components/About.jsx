@@ -25,7 +25,7 @@ const About = () => {
             const ag = annotationGroup([a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13]);
 
             const totalAnimationTime = 800 * 13; // 800ms per annotation times 13 annotations
-            const delayBeforeHide = totalAnimationTime + 10000; // Total animation time plus 1 second
+            const delayBeforeHide = totalAnimationTime + 15000; // Total animation time plus 1 second
 
             const toggleAnnotations = () => {
                 ag.show();
@@ -63,10 +63,10 @@ const About = () => {
                 </div>
                 <div className={styles.aboutButtonRow}>
                     <a href="https://www.linkedin.com/in/ben-winans/" target="_blank" rel="noopener noreferrer">
-                        <button className={styles.LinkedInButton}><span>LinkedIn</span></button>
+                        <button className={styles.LinkedInButton}>LinkedIn</button>
                     </a>
                     <a href="https://github.com/Ben-Winans" target="_blank" rel="noopener noreferrer">
-                        <button className={styles.GitHubButton}><span>GitHub</span></button>
+                        <button className={styles.GitHubButton}>GitHub</button>
                     </a>
                 </div>
             </div>

@@ -29,18 +29,21 @@
 .logo {
     display: flex;
     align-items: center;
-    flex: 1 0 0;
+    flex: 1 0 auto; /* Adjusted flex property */
     align-self: stretch;
-    color: #1E1E1E; 
+    color: #1E1E1E;
+    flex-shrink: 0; /* Prevents logo from shrinking */
+    white-space: nowrap; /* Keeps logo text on one line */
 }
 
 .navList {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    list-style: none; 
-    width: 520px;
-    padding: 0; 
+    list-style: none;
+    width: 520px; /* Adjusted width */
+    padding: 0;
+    flex-shrink: 1; /* Allows nav items to shrink */
 }
 
 .navItem {

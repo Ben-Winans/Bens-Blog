@@ -20,43 +20,31 @@
     margin-bottom: 20px;
 }
 
-.skillsColumn h3{
-    font-family: "Anonymous Pro";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    color: black;
-}
-
-.skillsColumn p{
-    color: #000;
+/* Center Align All Text in Columns */
+.skillsColumn h3, .skillsColumn p {
     text-align: center;
-    /* Body */
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .skillsContent {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .skillsColumn {
-    flex-basis: 20%; /* Adjust as needed */
+    flex: 1;
+    flex-basis: 20%; /* Adjust based on your design */
+    max-width: 200px;
+    min-width: 200px;
 }
 
-.skillsColumn h3 {
-    margin-bottom: 10px;
-}
 
-.skillsColumn p {
-    text-align: left;
-    margin: 0px;
+/* Small Screens: Single Column */
+@media (max-width: 500px) {
+    .skillsColumn {
+        flex-basis: 90%; /* Adjust for a single column */
+    }
 }
 
 .resumeButtonContainer {
@@ -64,25 +52,39 @@
     margin-bottom: 20px;
 }
 
-
-.resumeButton{
-
+.resumeButton {
     display: flex;
     height: 65px;
     justify-content: center;
     align-items: center;
-    padding: 0px 10px 0px 10px;
-
+    padding: 0px 25px 0px 25px;
     border-radius: 5px;
     border: 1px solid #838383;
     background: #B08968;
-
     color: #EDE0D4;
-
-    /* Button */
     font-family: "Anonymous Pro";
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    cursor: pointer;
+    position: relative;
+}
+
+.resumeButton::after {
+    content: '';
+    position: absolute;
+    bottom: 15px; 
+    height: 2px; 
+    background-color: currentColor; 
+    transition: width 0.3s;
+    width: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.resumeButton:hover::after {
+    width: calc(100% - 50px); 
+    left: 25px; 
+    transform: translateX(0); 
 }

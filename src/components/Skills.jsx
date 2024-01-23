@@ -4,7 +4,7 @@ import styles from './Skills.module.css';
 const Skills = () => {
     return (
         <div className={styles.skillsContainer}>
-            <div className={styles.skillsTitle}>What I've been working with</div>
+            <div className={styles.skillsTitle}>Skills I've gained</div>
             <div className={styles.skillsContent}>
                 <div className={styles.skillsColumn}>
                     <h3>Languages</h3>

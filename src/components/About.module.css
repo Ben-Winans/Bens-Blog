@@ -125,7 +125,8 @@ a {
     justify-content: space-between; 
     align-items: center; 
     flex-grow: 1; 
-    width: 100%; 
+    width: 100%;
+    max-width: 500px;
 }
 
 .LinkedInButton, .GitHubButton {
@@ -157,29 +158,22 @@ a {
     background: #B08968;
 }
 
-.LinkedInButton span, .GitHubButton span {
-    position: relative;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-}
-
 .LinkedInButton::after, .GitHubButton::after {
     content: '';
     position: absolute;
-    bottom: 15px; /* Adjust as needed */
-    height: 2px; /* Adjust thickness of underline */
-    background-color: currentColor; /* Use the current text color */
+    bottom: 15px; 
+    height: 2px; 
+    background-color: currentColor; 
     transition: width 0.3s;
-    width: 0; /* Start with no width */
-    left: 50%; /* Center at the start */
-    transform: translateX(-50%); /* Center alignment */
+    width: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
 }
 
 .LinkedInButton:hover::after, .GitHubButton:hover::after {
-    width: calc(100% - 50px); /* Adjust width as needed */
-    left: 25px; /* Align with the text start */
-    transform: translateX(0); /* Reset transform on hover */
+    width: calc(100% - 50px); 
+    left: 25px; 
+    transform: translateX(0); 
 }
 
 
