@@ -1,21 +1,28 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './Modal.module.css'; 
 
-const Modal = ({ showModal, setShowModal, content }) => {
+const Modal = ({ isOpen, onClose, title, images, description, tags }) => {
     return (
         <>
-            {showModal ? (
+            {isOpen ? (
                 <div className={styles.modalOverlay}>
                     <div className={styles.modalContent}>
-                        <span className={styles.closeModalButton} onClick={() => setShowModal(false)}>
+                        <span className={styles.closeModalButton} onClick={onClose}>
                             &times;
                         </span>
-                        <h2>{content.title}</h2>
-                        <img src={content.image} alt={content.title} />
-                        {content.paragraphs.map((paragraph, index) => (
-                            <p key={index}>{paragraph}</p>
+                        <h2>{title}</h2>
+                        {images.map((image, index) => (
+                            <img key={index} src={image} alt={`${title} - ${index}`} />
                         ))}
-                        {/* Add more content elements */}
+                        <p>{description}</p>
+                        <div>
+                            {tags.map((tag, index) => (
+                                <span key={index} className={styles.tag}>
+                                    {tag}
+                                </span>
+                            ))}
+                        </div>
+                        {/* Add more content elements as needed */}
                     </div>
                 </div>
             ) : null}
