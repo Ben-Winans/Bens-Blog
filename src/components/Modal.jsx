@@ -1,31 +1,62 @@
-import React from 'react';
-import styles from './Modal.module.css'; 
+import React, { useEffect } from 'react';
+import styles from './Modal.module.css';
 
-const Modal = ({ isOpen, onClose, title, images, description, tags }) => {
+const Modal = ({ isOpen, onClose, title, titleImages, content }) => {
+    useEffect(() => {
+        document.body.style.overflow = isOpen ? 'hidden' : 'unset';
+        // Cleanup function
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [isOpen]);
+
+    const handleClose = (e) => {
+        if (e.target.classList.contains(styles.modalOverlay)) {
+            onClose();
+        }
+    };
+
+    const renderTitleImages = () => {
+        return titleImages.map((imgSrc, index) => (
+            <img key={index} src={imgSrc} alt={`${title} - ${index}`} className={styles.modalTitleImage} />
+        ));
+    };
+
+    const parseBoldText = (text) => {
+        const parts = text.split(/(\*.*?\*)/).filter(part => part); 
+      
+        return parts.map((part, index) => {
+          if (part.startsWith('*') && part.endsWith('*')) {
+            return <strong key={index}>{part.slice(2, -2)}</strong>; 
+          }
+          return part; 
+        });
+      };
+
+    const renderContent = () => {
+        return content && content.map((item, index) => (
+            <div key={index}>
+                {item.subHeading && <h3 className={styles.modalSubheading}>{parseBoldText(item.subHeading)}</h3>}
+                {item.image && <img src={item.image} alt={`Section ${index}`} className={styles.modalImage} />}
+                {item.body && item.body.map((paragraph, idx) => (
+                    <p key={idx} className={styles.modalBody}>{parseBoldText(paragraph)}</p>
+                ))}
+            </div>
+        ));
+    };
+
     return (
         <>
-            {isOpen ? (
-                <div className={styles.modalOverlay}>
-                    <div className={styles.modalContent}>
-                        <span className={styles.closeModalButton} onClick={onClose}>
-                            &times;
-                        </span>
+            {isOpen && (
+                <div className={styles.modalOverlay} onClick={handleClose}>
+                    <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
+                        <span className={styles.closeModalButton} onClick={onClose}>&times;</span>
                         <h2>{title}</h2>
-                        {images.map((image, index) => (
-                            <img key={index} src={image} alt={`${title} - ${index}`} />
-                        ))}
-                        <p>{description}</p>
-                        <div>
-                            {tags.map((tag, index) => (
-                                <span key={index} className={styles.tag}>
-                                    {tag}
-                                </span>
-                            ))}
-                        </div>
-                        {/* Add more content elements as needed */}
+                        {renderTitleImages()}
+                        {renderContent()}
                     </div>
                 </div>
-            ) : null}
+            )}
         </>
     );
 };

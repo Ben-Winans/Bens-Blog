@@ -6,6 +6,7 @@ import AV_title_1 from '../assets/AV_title_1.png';
 import AV_title_2 from '../assets/AV_title_2.png';
 import OS_title from '../assets/OS_title.png';
 import PP_title from '../assets/PP_title.png';
+import modalContent from './modalContent';
 
 const Works = () => {
     const [openModal, setOpenModal] = useState(null);
@@ -18,13 +19,13 @@ const Works = () => {
             tags: ['Full Stack', 'SERN', 'Javascript', 'HTML', 'css', 'Redux', 'Docker', 'Jest', 'Axios', 'styled-components', 'Sequelize'],
         },
         OS: {
-            image: OS_title, 
+            image: [OS_title], 
             title: 'Operating Systems',
             description: 'Collection of Linux based C/C++ projects',
             tags: ['Linux', 'CLI', 'Bash', 'VScode', 'C', 'C++', 'VM', 'gtest'],
         },
         PP: {
-            image: PP_title, 
+            image: [PP_title], 
             title: 'Personal Portfolio V1',
             description: 'First version of my personal portfolio featuring a from scratch design.',
             tags: ['Figma', 'React', 'GitHub Pages', 'Javascript', 'HTML', 'css'],
@@ -32,13 +33,10 @@ const Works = () => {
     };
 
     const handleOpenModal = (projectId) => {
-        console.log('here');
-        console.log(projectId);
         setOpenModal(projectId);
     };
 
     const handleCloseModal = () => {
-        console.log('also here');
         setOpenModal(null);
     };
 
@@ -59,12 +57,11 @@ const Works = () => {
             </div>
             {openModal && (
                 <Modal 
-                    isOpen={Boolean(openModal)} 
-                    onClose={handleCloseModal}
-                    title={projects[openModal].title}
-                    images={Array.isArray(projects[openModal].image) ? projects[openModal].image : [projects[openModal].image]}
-                    description={projects[openModal].description}
-                    tags={projects[openModal].tags}
+                isOpen={Boolean(openModal)} 
+                onClose={handleCloseModal}
+                title={projects[openModal].title}
+                titleImages={projects[openModal].image}
+                content={modalContent[openModal]}
                 />
             )}
         </div>
