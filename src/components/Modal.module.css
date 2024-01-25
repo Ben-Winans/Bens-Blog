@@ -1,3 +1,7 @@
+h2{
+    text-align: center;
+}
+
 .modalOverlay {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
@@ -20,7 +24,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 20px;
+    padding: 50px;
     border-radius: 8px;
     max-width: 800px;
     width: 60%;
@@ -42,4 +46,43 @@
     right: 15px;
     font-size: 24px;
     cursor: pointer;
+}
+
+.modalSubheading{
+    text-align: center;
+}
+
+.modalTitleImageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    width: 100%;
+    gap: 10px; /* Adjust the gap between images if needed */
+}
+
+.modalTitleImage {
+    /* If you have specific styles for individual images, add them here */
+    width: 100%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+}
+
+
+@media (max-width: 600px) {
+    h2{
+        font-size: 24px;
+    }
+    .modalContent{
+        width: 90%;
+        padding: 25px;
+    }
+    .modalContent h3, .modalSubheading {
+        font-size: 20px; /* Reduce heading font size to 20px */
+    }
+
+    .modalBody {
+        font-size: 16px; /* Reduce body text font size to 16px */
+    }
+
 }

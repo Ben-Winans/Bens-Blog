@@ -17,9 +17,13 @@ const Modal = ({ isOpen, onClose, title, titleImages, content }) => {
     };
 
     const renderTitleImages = () => {
-        return titleImages.map((imgSrc, index) => (
-            <img key={index} src={imgSrc} alt={`${title} - ${index}`} className={styles.modalTitleImage} />
-        ));
+        return (
+            <div className={styles.modalTitleImageContainer}>
+                {titleImages.map((imgSrc, index) => (
+                    <img key={index} src={imgSrc} alt={`${title} - ${index}`} className={styles.modalTitleImage} />
+                ))}
+            </div>
+        );
     };
 
     const parseBoldText = (text) => {
@@ -27,7 +31,7 @@ const Modal = ({ isOpen, onClose, title, titleImages, content }) => {
       
         return parts.map((part, index) => {
           if (part.startsWith('*') && part.endsWith('*')) {
-            return <strong key={index}>{part.slice(2, -2)}</strong>; 
+            return <strong key={index}>{part.slice(1, -1)}</strong>; 
           }
           return part; 
         });

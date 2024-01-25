@@ -15,7 +15,7 @@
     padding-bottom: 50px;
     
     /* Title */
-    font-family: "Anonymous Pro";
+    font-family: Inter;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -32,4 +32,11 @@
     max-width: 1500px;
     gap: 30px;
     z-index: 3;
+}
+
+@media (max-width: 600px) {
+    .worksTitle {
+        font-size: 24px; /* Reduce title font size to 20px */
+    }
+
 }

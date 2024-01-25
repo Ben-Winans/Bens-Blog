@@ -32,6 +32,7 @@ a {
     padding: 0px 150px;
     gap: 80px;
     flex-shrink: 1;
+    z-index: 3;
 }
 
 /* Media query for screen sizes at or below 1344px */
@@ -123,8 +124,8 @@ a {
 .aboutButtonRow {
     display: flex;
     justify-content: space-between; 
-    align-items: center; 
-    flex-grow: 1; 
+    align-items: center;
+    padding-top: 100px; 
     width: 100%;
     max-width: 500px;
 }
@@ -176,5 +177,86 @@ a {
     transform: translateX(0); 
 }
 
+@media (max-width: 820px) {
+    .imageCard {
+        width: 95%; /* Photo becomes 80% of the screen width */
+        height: auto;
+    }
+
+    .leftSection {
+        align-items: center; /* Center-align items horizontally */
+    }
+
+    .aboutTitle {
+        justify-content: center; /* Center-align flex items horizontally */
+        padding-right: 0; /* Remove padding-right */
+    }
+
+    .aboutBody {
+        align-items: center; /* Center-align items horizontally */
+    }
+
+    .aboutContainer {
+        padding: 0 10%; /* Adjust padding for smaller screens */
+    }
+
+    .LinkedInButton, .GitHubButton {
+        width: 180px; /* Reduce the width of the buttons */
+        height: 55px; /* Reduce the height of the buttons */
+        font-size: 28px; /* Adjust font size to fit the smaller buttons */
+    }
+
+    .aboutButtonRow{
+        height: 100px;
+    }
+    
+    .rightSection{
+        height: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px; /* Adjust base font size to 16px */
+    }
+
+    h1 {
+        font-size: 20px; /* Reduce h1 heading size to 20px */
+    }
+
+    .aboutContainer {
+        padding: 0 5%; /* Adjust padding */
+        gap: 40px; /* Reduce gap */
+    }
+
+    .imageCard {
+        width: 100%;
+    }
+
+    .leftSection, .rightSection {
+        /* Adjust alignments and dimensions */
+        height: auto;
+        align-items: center;
+    }
+
+    .aboutTitle, .aboutBody {
+        /* Center align title and body */
+        align-items: center;
+        padding-right: 0;
+    }
+
+    .LinkedInButton, .GitHubButton {
+        width: 120px; /* Further reduce the width of the buttons */
+        height: 50px; /* Further reduce the height of the buttons */
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .aboutButtonRow {
+        padding-top: 50px; /* Adjust padding */
+        justify-content: space-around;
+    }
+
+    /* Additional styles for smaller elements can be added here */
+}
 
 /* End */

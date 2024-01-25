@@ -11,13 +11,13 @@
 }
 
 .skillsTitle {
-    font-family: "Anonymous Pro";
+    font-family: Inter;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     color: black;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 /* Center Align All Text in Columns */
@@ -87,4 +87,27 @@
     width: calc(100% - 50px); 
     left: 25px; 
     transform: translateX(0); 
+}
+
+@media (max-width: 600px) {
+    .skillsTitle {
+        font-size: 24px; /* Reduce title font size to 20px */
+    }
+
+    .skillsColumn h3 {
+        font-size: 16px; /* Reduce subheading font size to 16px */
+    }
+
+    .skillsColumn p {
+        font-size: 14px; /* Reduce list item font size to 14px */
+        padding-bottom: 10px; /* Reduce padding between list items */
+        margin: 0px 0px 0px 0px;
+    }
+
+    .resumeButton {
+        font-size: 24px; /* Reduce button font size to 16px */
+        padding: 0px 15px; /* Reduce button padding */
+        height: 50px; /* Optionally, reduce the button height */
+    }
+
 }

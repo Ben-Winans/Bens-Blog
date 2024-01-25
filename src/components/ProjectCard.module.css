@@ -28,6 +28,11 @@
     background-color: #000;
 }
 
+.cardImage {
+    width: 100%; /* Make the image fill the container width */
+    object-fit: cover; /* Cover the container, maintain aspect ratio */
+}
+
 .cardBody {
     padding: 16px;
     display: flex;
@@ -82,4 +87,29 @@
     padding: 4px 8px;
     font-size: 12px; 
     color: #333; 
+}
+
+@media (max-width: 600px) {
+
+    .cardTitle {
+        font-size: 18px; /* Reduced title font size to 18px */
+        height: 40px;
+    }
+
+    .cardBody {
+        font-size: 16px; /* Reduced body font size to 16px */
+    }
+
+    .cardDescription {
+        font-size: 16px; /* Adjust description font size to 16px */
+        height: 70px;
+    }
+
+    .cardTags {
+        /* Adjust or remove height for natural content flow */
+    }
+    
+    .tag {
+        font-size: 12px; /* Reduced tag font size to 12px */
+    }
 }
