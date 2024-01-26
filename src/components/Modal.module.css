@@ -68,6 +68,36 @@ h2{
     height: auto; /* Adjust height as needed */
 }
 
+.modalImage {
+    width: 95%; /* Make images take up 95% of the modal width */
+    height: auto; /* Adjust height as needed */
+    object-fit: cover; /* Cover the container, maintain aspect ratio */
+    margin: 0 auto; /* Center the image in the container */
+}
+
+
+.modalImageGroupContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between images if needed */
+    max-width: 95%; /* Ensure grouped images do not exceed 95% of the modal width */
+    margin: 0 auto; /* Center the group container within the modal */
+}
+
+.modalGroupedImage {
+    max-width: 100%; /* Ensure individual images do not exceed the group container width */
+    height: auto; /* Adjust height as needed */
+    object-fit: cover; /* Cover the container, maintain aspect ratio */
+}
+
+
+@media (max-width: 840px) {
+    .modalContent{
+        width: 80%;
+    }
+}
 
 @media (max-width: 600px) {
     h2{

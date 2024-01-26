@@ -79,13 +79,16 @@
     flex-wrap: wrap;
     gap: 8px;
     height: 80px;
+    align-items: flex-start; 
+    justify-content: flex-start;
 }
     
 .tag {
     background: rgba(127, 85, 57, 0.4);
     border-radius: 4px;
-    padding: 4px 8px;
+    padding: 4px 4px;
     font-size: 12px; 
+    height: auto;
     color: #333; 
 }
 

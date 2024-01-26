@@ -37,17 +37,42 @@ const Modal = ({ isOpen, onClose, title, titleImages, content }) => {
         });
       };
 
-    const renderContent = () => {
-        return content && content.map((item, index) => (
-            <div key={index}>
-                {item.subHeading && <h3 className={styles.modalSubheading}>{parseBoldText(item.subHeading)}</h3>}
-                {item.image && <img src={item.image} alt={`Section ${index}`} className={styles.modalImage} />}
-                {item.body && item.body.map((paragraph, idx) => (
-                    <p key={idx} className={styles.modalBody}>{parseBoldText(paragraph)}</p>
-                ))}
-            </div>
-        ));
+      const renderContent = () => {
+        return content.map((item, index) => {
+            switch (item.type) {
+                case 'subheading':
+                    return <h3 key={index} className={styles.modalSubheading}>{parseBoldText(item.text)}</h3>;
+                
+                case 'body':
+                    if (Array.isArray(item.text)) {
+                        // If the body text is an array, render each string as a separate paragraph
+                        return item.text.map((paragraph, idx) => (
+                            <p key={`${index}-${idx}`} className={styles.modalBody}>{parseBoldText(paragraph)}</p>
+                        ));
+                    }
+                    // If it's not an array, render it as a single paragraph
+                    return <p key={index} className={styles.modalBody}>{parseBoldText(item.text)}</p>;
+    
+                case 'image':
+                    if (Array.isArray(item.src)) {
+                        // If the image source is an array, render each image in a group container
+                        return (
+                            <div key={index} className={styles.modalImageGroupContainer}>
+                                {item.src.map((imgSrc, idx) => (
+                                    <img key={idx} src={imgSrc} alt={`${title} - ${idx}`} className={styles.modalGroupedImage} />
+                                ))}
+                            </div>
+                        );
+                    }
+                    // If it's not an array, render a single image
+                    return <img key={index} src={item.src} alt={`Section ${index}`} className={styles.modalImage} />;
+    
+                default:
+                    return null;
+            }
+        });
     };
+    
 
     return (
         <>
