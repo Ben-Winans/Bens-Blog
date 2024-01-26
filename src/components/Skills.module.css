@@ -20,7 +20,6 @@
     margin-bottom: 0px;
 }
 
-/* Center Align All Text in Columns */
 .skillsColumn h3, .skillsColumn p {
     text-align: center;
 }
@@ -34,16 +33,15 @@
 
 .skillsColumn {
     flex: 1;
-    flex-basis: 20%; /* Adjust based on your design */
+    flex-basis: 20%;  
     max-width: 200px;
     min-width: 200px;
 }
 
 
-/* Small Screens: Single Column */
 @media (max-width: 500px) {
     .skillsColumn {
-        flex-basis: 90%; /* Adjust for a single column */
+        flex-basis: 90%;  
     }
 }
 
@@ -91,23 +89,23 @@
 
 @media (max-width: 600px) {
     .skillsTitle {
-        font-size: 24px; /* Reduce title font size to 20px */
+        font-size: 24px; 
     }
 
     .skillsColumn h3 {
-        font-size: 16px; /* Reduce subheading font size to 16px */
+        font-size: 16px;  
     }
 
     .skillsColumn p {
-        font-size: 14px; /* Reduce list item font size to 14px */
-        padding-bottom: 10px; /* Reduce padding between list items */
+        font-size: 14px;  
+        padding-bottom: 10px;  
         margin: 0px 0px 0px 0px;
     }
 
     .resumeButton {
-        font-size: 24px; /* Reduce button font size to 16px */
-        padding: 0px 15px; /* Reduce button padding */
-        height: 50px; /* Optionally, reduce the button height */
+        font-size: 24px; 
+        padding: 0px 15px;  
+        height: 50px;  
     }
 
 }

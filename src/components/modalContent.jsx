@@ -20,12 +20,12 @@ const modalContent = {
         {
             type: 'body',
             text: [
-                "Pictured above is the trial taking interface I designed for the Reed Laboratory to enable an ongoing study." 
-                + "This application provides the lab a way to perform distanced and in person trials, collect data on trials,"
-                + " retrieve trial data, and define future trials. Originally the project team consisted of four members."
+                "Pictured above is the trial-taking interface I designed for the Reed Laboratory to enable an ongoing study." 
+                + " This application provides the lab a way to perform distanced and in person trials, collect data on trials,"
+                + " retrieve trial data, and define future trials. Originally, the project team consisted of four members:"
                 + " two technical developers including myself and two lab members as contact points but after unforeseen circumstances"
                 + " I became the sole technical contributor."
-                + "The base goals of this project were to enable at least one PhD study, (non-reconfigurable) and to enable data collections."
+                + " The base goals of this project were to enable at least one PhD study, (non-reconfigurable) and to enable data collections."
                 + " These goals were exceeded by the end of the project."
             ]
         },
@@ -243,16 +243,16 @@ const modalContent = {
         {
             type: 'body',
             text: [
-                "I began by researching a range of portfolio sites from juniors to seniors. I saw some features I liked such as "
-                + "*Rough Annotations*, a a lightweight Javascript library for emphasizing text. I also learned a *minimalist "
-                + "design* would fit my needs best as it would require *less programming* for a higher impact. The fallback of "
-                + "some minimalist designs though is that they lack a personal touch I hoped to weave into my own site. Other "
-                + "sites could feel cookie cutter and left me with no impression of the designer behind the site. I addressed this"
+                "I began this project by researching a range of portfolio sites from juniors and senior developers. I took note of some features I liked, such as "
+                + "*Rough Annotations*, a lightweight Javascript library for emphasizing text. I decided a *minimalist "
+                + "design* would fit my needs best, as it would require *less programming* for a higher impact. The fallback of "
+                + "some minimalist designs is that they can lack a personal touch that I hoped to weave into my own site. Other "
+                + "portfolios could feel cookie cutter and left me with no impression of the designer behind the site. I addressed this"
                 + " by taking a risk in my own work. I chose the happiest photo I could find of myself and built the site around it."
-                + " This entailed getting a preliminary setup in place of all elements the final site would have then selecting a base"
+                + " This entailed getting a preliminary setup in place of all elements the final site would have, then selecting a base"
                 + " color from my skin-tone and matching it to a fitting color pallet. I did my first draft of the site in *Figma* with"
-                + " no code, then after feeling satisfied with my work I moved on to programming a *React* application making use of *vite*"
-                + " and its *Hot Module Replacement* so I could see my code updates in real time. "
+                + " no codel. After feeling satisfied with my work, I moved on to programming a *React* application making use of *vite*"
+                + " and its *Hot Module Replacement* to see my code updates in real time. "
             ]
         },
         {
@@ -266,14 +266,14 @@ const modalContent = {
         {
             type: 'body',
             text: [
-                "For this project I already had *a years worth of experience* working in *Figma* and understood where future pains could"
-                + " come in from an unorganized Figma file. To stay organized I practiced the best methods from the start. This looked "
+                "Coming into this project with *a years worth of experience* working in *Figma,* I understood where future pains could"
+                + " come in from an unorganized Figma file. To stay organized, I practiced the best methods from the start. This looked "
                 + "like creating elements from the smallest portion up. Everything that could be a *component* was made into one. In "
-                + "effect, tweaking design elements became much easier as each section could be *assembled individually* then placed "
+                + "effect, tweaking design elements became much easier as each section could be *assembled individually,* then placed "
                 + "together. Then, as the design grew closer to fruition and flaws could be seen, instead of editing each instance of a "
                 + "class I would *edit the individual component* and let changes *propagate* through the Figma file. This made work more "
                 + "*reliable* and *neater*. Finally, I pushed myself to create a *working prototype* delving deeper into Figma’s interactions."
-                + " This allowed me to see a *working implantation* of my *imagined project* prior to investing any time in code. Given it "
+                + " This allowed me to see a *working implementation* of my *imagined project* prior to investing any time in code. Given it "
                 + "took roughly *3 weeks* to program this website, *prototyping* was a crucial step in determining the validity of my stylistic"
                 + " choices *prior to committing the resources to actualize the project*. "
             ]

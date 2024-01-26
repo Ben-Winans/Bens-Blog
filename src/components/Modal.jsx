@@ -4,7 +4,6 @@ import styles from './Modal.module.css';
 const Modal = ({ isOpen, onClose, title, titleImages, content }) => {
     useEffect(() => {
         document.body.style.overflow = isOpen ? 'hidden' : 'unset';
-        // Cleanup function
         return () => {
             document.body.style.overflow = 'unset';
         };

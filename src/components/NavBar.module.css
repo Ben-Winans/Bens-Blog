@@ -59,9 +59,9 @@
     justify-content: space-between;
     align-items: flex-start;
     list-style: none;
-    width: 520px; /* Adjusted width */
+    width: 520px; 
     padding: 0;
-    flex-shrink: 1; /* Allows nav items to shrink */
+    flex-shrink: 1;  
 }
 
 .navItem {
