@@ -1,4 +1,3 @@
-import OS_img_1 from '../assets/OS_img_1.png'
 import OS_img_2 from '../assets/OS_img_2.png'
 import OS_img_3 from '../assets/OS_img_3.png'
 import OS_img_4 from '../assets/OS_img_4.png'
@@ -8,6 +7,9 @@ import OS_img_7 from '../assets/OS_img_7.png'
 import OS_img_8 from '../assets/OS_img_8.png'
 import OS_img_9 from '../assets/OS_img_9.png'
 import OS_img_10 from '../assets/OS_img_10.png'
+import PP_img_2 from '../assets/PP_img_2.png'
+import PP_img_3 from '../assets/PP_img_3.png'
+import PP_img_4 from '../assets/PP_img_4.png'
 
 const modalContent = {
     AV: [
@@ -236,20 +238,79 @@ const modalContent = {
     PP: [
         {
             type: 'subheading',
-            text: "Editing the Linux O.S."
+            text: "Crafting a personal website"
         },
         {
             type: 'body',
             text: [
-                "The exercise pictured above helped me learn how to navigate/understand the Linux O.S.. To add my name I had to search the O.S."
-                + " using *grep* and *cli* traversal until I found the *boot loader* section where I could edit the starting screen. ",
-                "For another assignment (pictured below) I edited the Linux O.S. by adding a *kernel-wide* message variable. This required me "
-                + "to create and add new *system calls* to the O.S.. Through this, I learned about the *task scheduler* of the O.S. and how *system calls* function. "
+                "I began by researching a range of portfolio sites from juniors to seniors. I saw some features I liked such as "
+                + "*Rough Annotations*, a a lightweight Javascript library for emphasizing text. I also learned a *minimalist "
+                + "design* would fit my needs best as it would require *less programming* for a higher impact. The fallback of "
+                + "some minimalist designs though is that they lack a personal touch I hoped to weave into my own site. Other "
+                + "sites could feel cookie cutter and left me with no impression of the designer behind the site. I addressed this"
+                + " by taking a risk in my own work. I chose the happiest photo I could find of myself and built the site around it."
+                + " This entailed getting a preliminary setup in place of all elements the final site would have then selecting a base"
+                + " color from my skin-tone and matching it to a fitting color pallet. I did my first draft of the site in *Figma* with"
+                + " no code, then after feeling satisfied with my work I moved on to programming a *React* application making use of *vite*"
+                + " and its *Hot Module Replacement* so I could see my code updates in real time. "
             ]
         },
         {
             type: 'image',
-            src: OS_img_1
+            src: PP_img_2
+        },
+        {
+            type: 'subheading',
+            text: "Working in Figma"
+        },
+        {
+            type: 'body',
+            text: [
+                "For this project I already had *a years worth of experience* working in *Figma* and understood where future pains could"
+                + " come in from an unorganized Figma file. To stay organized I practiced the best methods from the start. This looked "
+                + "like creating elements from the smallest portion up. Everything that could be a *component* was made into one. In "
+                + "effect, tweaking design elements became much easier as each section could be *assembled individually* then placed "
+                + "together. Then, as the design grew closer to fruition and flaws could be seen, instead of editing each instance of a "
+                + "class I would *edit the individual component* and let changes *propagate* through the Figma file. This made work more "
+                + "*reliable* and *neater*. Finally, I pushed myself to create a *working prototype* delving deeper into Figma’s interactions."
+                + " This allowed me to see a *working implantation* of my *imagined project* prior to investing any time in code. Given it "
+                + "took roughly *3 weeks* to program this website, *prototyping* was a crucial step in determining the validity of my stylistic"
+                + " choices *prior to committing the resources to actualize the project*. "
+            ]
+        },
+        {
+            type: 'subheading',
+            text: "Programming the Site"
+        },
+        {
+            type: 'image',
+            src: PP_img_3
+        },
+        {
+            type: 'body',
+            text: [
+                "This project served as an excellent practice in *React*, *HTML*, *CSS*, *Javascript*, *Git*,  *Chrome Dev tools* and "
+                + "*adapting designs from Figma*.  While programming the site I practiced implementing *DRY* (Don’t repeat yourself) "
+                + "principal and *React best practices*. In this project that meant creating *generalized  components* which receive "
+                + "content objects then spool the data out into appropriate html with stylings. That is to say the *code writes more code*"
+                + " instead of the *developer explicitly writing each visual object*. This made for *shorter files*, *cleaner code* and a "
+                + "*simpler codebase*. Now when I or other developers want to repurpose pieces of code from this project, it will be more "
+                + "*quickly understood* and *adaptable to new scenarios*."
+            ]
+        },
+        {
+            type: 'image',
+            src: PP_img_4
+        },
+        {
+            type: 'body',
+            text: [
+                "I greatly improved my understanding and usage of *Dev tools* during my work as I needed to adapt my design to *mobile"
+                + " friendly layouts* with *media queries*. After focusing on making code generating functions I found greater complexity"
+                + " in diagnosing issues with my css. Using chrome dev tools no only was I able to simulate a range of formats from different"
+                + " mobile phones to tablets but I was also able to *analyze individual divs* with the hover of a mouse. This greatly improved"
+                + " my speed in adapting designs and improved my accuracy whether it be addressing margins, padding or font changes. "
+            ]
         }
     ],
 };
