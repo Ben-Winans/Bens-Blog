@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import {useEffect} from 'react';
 import styles from './About.module.css';
 import aboutImage from '../assets/About_img.png'
 import { annotate, annotationGroup } from 'rough-notation';
@@ -14,9 +14,9 @@ const About = () => {
             const a4 = annotate(document.querySelector('#e4'), { type: 'highlight', color: '#E4F1EE', multiline: 'true', iterations: 1  });
             const a5 = annotate(document.querySelector('#e5'), { type: 'highlight', color: '#D9EDF8', multiline: 'true', iterations: 1  });
             const a6 = annotate(document.querySelector('#e6'), { type: 'highlight', color: '#DEDAF4', multiline: 'true', iterations: 1  });
-            const a7 = annotate(document.querySelector('#e7'), { type: 'highlight', color: '#FFADAD', multiline: 'true', iterations: 1  });
-            const a8 = annotate(document.querySelector('#e8'), { type: 'highlight', color: '#FFD6A5', multiline: 'true', iterations: 1  });
-            const a9 = annotate(document.querySelector('#e9'), { type: 'highlight', color: '#FDFFB6', multiline: 'true', iterations: 1  });
+            const a7 = annotate(document.querySelector('#e7'), { type: 'highlight', color: '#FFADAD', multiline: 'true', iterations: 1, padding: [4,4,4,4] });
+            const a8 = annotate(document.querySelector('#e8'), { type: 'highlight', color: '#FFD6A5', multiline: 'true', iterations: 1, padding: [4,4,4,4] });
+            const a9 = annotate(document.querySelector('#e9'), { type: 'highlight', color: '#FDFFB6', multiline: 'true', iterations: 1, padding: [4,4,4,4] });
             const a10 = annotate(document.querySelector('#e10'), { type: 'highlight', color: '#E4F1EE', multiline: 'true', iterations: 1  });
             const a11 = annotate(document.querySelector('#e11'), { type: 'highlight', color: '#D9EDF8', multiline: 'true', iterations: 1  });
             const a12 = annotate(document.querySelector('#e12'), { type: 'highlight', color: '#DEDAF4', multiline: 'true', iterations: 1  });
@@ -51,9 +51,9 @@ const About = () => {
                     <h1>Hi! I'm Ben, a <span id="e1">Developer</span> from Florida.</h1>
                 </div>
                 <div className={styles.aboutBody}>
-                    <p>I love building applications that are <span id="e2">scalable, impactful</span> and <span id="e3">creative</span>.</p>
-                    <p>I studied Computer Engineering at the University of Florida where I gained experience in <span id="e4">Web-development</span>, <span id="e5">Operating Systems</span>, <span id="e6">Cyber-security</span> and <span id="e7">IOT technology</span>. I spent 1 year working as the sole technical contributor to a <span id="e8">full-stack</span> application where I learned how to fulfil a project from <span id="e9">ideation to completion</span>. </p>
-                    <p>In these experiences I’ve learned how to work independently and on small teams, both specialized and cross-functional. My work style emphasizes being <span id="e10">easy to approach</span>, <span id="e11">effective when communicating</span> and <span id="e12">thorough while researching</span>.</p>
+                    <p>I love building applications that are <span id="e2">scalable, impactful</span> and <span id="e3">creative.</span></p>
+                    <p>I studied Computer Engineering at the University of Florida where I gained experience in <span id="e4">Web-development,</span> <span id="e5">Operating Systems,</span> <span id="e6">Cyber-security</span> and <span id="e7">IOT technology.</span> I spent 1 year working as the sole technical contributor to a <span id="e8">full-stack</span> application where I learned how to fulfil a project from <span id="e9">ideation to completion.</span> </p>
+                    <p>In these experiences I’ve learned how to work independently and on small teams, both specialized and cross-functional. My work style emphasizes being <span id="e10">easy to approach,</span> <span id="e11">effective when communicating</span> and <span id="e12">thorough while researching.</span></p>
                     <p>I am currently looking for a new role as a developer. <span id="e13" className={styles.hireMe}>Hire me?</span> </p>
                 </div>
             </div>

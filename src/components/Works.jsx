@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import Modal from './Modal';
 import styles from './Works.module.css';

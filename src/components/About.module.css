@@ -223,8 +223,12 @@ a {
         gap: 40px; 
     }
 
-    .imageCard {
-        width: 100%;
+    .imageCard{
+        height: 380px;
+    }
+
+    .aboutImage{
+        
     }
 
     .leftSection, .rightSection {

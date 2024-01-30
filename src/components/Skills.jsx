@@ -1,7 +1,9 @@
-import React from 'react';
 import styles from './Skills.module.css';
 
 const Skills = () => {
+
+    const resumePath = '/Bens-Blog/Ben_Winans_Resume_2024.pdf';
+
     return (
         <div className={styles.skillsContainer}>
             <div className={styles.skillsTitle}>Skills I've gained</div>
@@ -53,7 +55,9 @@ const Skills = () => {
                 </div>
             </div>
             <div className={styles.resumeButtonContainer}>
-                <button className={styles.resumeButton}>Get a copy of my resume</button>
+                <a href={resumePath} download="Ben_Winans_Resume_2024.pdf" className={styles.resumeButton}>
+                    Get a copy of my resume
+                </a>
             </div>
         </div>
     );

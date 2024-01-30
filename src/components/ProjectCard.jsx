@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './ProjectCard.module.css';
 
 const ProjectCard = ({ image, title, description, tags }) => {
