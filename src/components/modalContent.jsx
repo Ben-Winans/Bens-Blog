@@ -251,7 +251,7 @@ const modalContent = {
                 + " by taking a risk in my own work. I chose the happiest photo I could find of myself and built the site around it."
                 + " This entailed getting a preliminary setup in place of all elements the final site would have, then selecting a base"
                 + " color from my skin-tone and matching it to a fitting color pallet. I did my first draft of the site in *Figma* with"
-                + " no codel. After feeling satisfied with my work, I moved on to programming a *React* application making use of *vite*"
+                + " no code. After feeling satisfied with my work, I moved on to programming a *React* application making use of *vite*"
                 + " and its *Hot Module Replacement* to see my code updates in real time. "
             ]
         },
