@@ -1,0 +1,35 @@
+:root {
+
+    /*  Original color scheme 
+
+    --primary-color: #EDE0D4;
+    --secondary-color: #E6CCB2;
+    
+    --text-color: #1E1E1E; 
+
+    --primary-button-color: #7F5539;
+    --primary-button-text-color: #EDE0D4;
+    --secondary-button-color: #B08968;
+
+    --modal-background-color: white; 
+
+    --card-tag-color: rgba(127, 85, 57, 0.4); */
+
+    --primary-color: #342628;
+    --secondary-color: #eee7d5;
+    
+    --text-color: #EEE7d5; 
+    --primary-text-color: #EEE7d5;
+    --secondary-text-color: #272725;
+
+    --primary-button-color: #007074;
+    --primary-button-text-color: #EEE7d5;
+    --secondary-button-color: #e1926a;
+
+    --modal-background-color: #007074; 
+
+    --card-img-background-color: black; 
+    --card-tag-color: #007074;
+    --card-text-color: black;
+    --card-tag-text-color: white;
+  }

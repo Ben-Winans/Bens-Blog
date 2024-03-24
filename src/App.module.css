@@ -12,7 +12,7 @@
   right: 0;
   bottom: -150px;
   height: 150px;
-  background: linear-gradient(to top right, transparent 50%, #EDE0D4 50%);
+  background: linear-gradient(to top right, transparent 50%, var(--primary-color) 50%);
   z-index: 1;
 }
 
@@ -24,7 +24,7 @@
   right: 0;
   bottom: 0;
   height: 150px;
-  background: linear-gradient(to bottom left, transparent 50%, #EDE0D4 50%);
+  background: linear-gradient(to bottom left, transparent 50%, var(--primary-color) 50%);
   z-index: 1;
 }
 
@@ -36,6 +36,6 @@
   right: 0;
   bottom: 150px;
   height: 150px;
-  background: linear-gradient(to bottom right, transparent 50%, #E6CCB2 50%);
+  background: linear-gradient(to bottom right, transparent 50%, var(--secondary-color) 50%);
   z-index: 1;
 }

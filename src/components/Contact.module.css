@@ -1,5 +1,5 @@
 .contactButtonContainer {
-    background-color: #E6CCB2;
+    background-color: var(--secondary-color);
     min-height: 150px;
     display: flex;
     justify-content: center;
@@ -11,13 +11,13 @@
 .contactButton {
     border-radius: 5px;
     border: 1px solid #838383;
-    background: #7F5539;
+    background: var(--primary-button-color);
     display: flex;
     height: 65px;
     padding: 0px 25px;
     justify-content: center;
     align-items: center;
-    color: #EDE0D4;
+    color: var(--primary-button-text-color);
     font-family: Anonymous Pro;
     font-size: 32px;
     font-style: normal;

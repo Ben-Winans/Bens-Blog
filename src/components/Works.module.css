@@ -10,7 +10,7 @@
 }
 
 .worksTitle {
-    color: #000;
+    color: var(--primary-text-color);
     text-align: center;
     padding-bottom: 50px;
     

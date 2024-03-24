@@ -1,6 +1,6 @@
 
 h1 {
-    color: #000;
+    color: var(--primary-text-color);
     font-family: Inter;
     font-size: 40px;
     font-style: normal;
@@ -9,7 +9,7 @@ h1 {
 }
 
 body {
-    color: #3f3f3f;
+    color: var(--primary-text-color);
     font-family: Poppins;
     font-size: 20px;
     font-style: normal;
@@ -93,7 +93,8 @@ a {
 
 .rightSection {
     display: flex;
-    height: 700px;
+    /* height: 700px */
+    height: 300px; 
     flex-direction: column;
     justify-content: start;
     align-items: center;
@@ -117,6 +118,8 @@ a {
 
 .aboutButtonRow {
     display: flex;
+    flex-direction: column;
+    gap: 50px;
     justify-content: space-between; 
     align-items: center;
     padding-top: 100px; 
@@ -134,7 +137,7 @@ a {
     height: 65px;
     border-radius: 5px;
     border: 1px solid #838383;
-    color: #EDE0D4;
+    color: var(--primary-button-text-color);
     font-family: Anonymous Pro;
     font-size: 32px;
     font-style: normal;
@@ -146,11 +149,11 @@ a {
 }
 
 .LinkedInButton {
-    background: #7F5539;
+    background: var(--primary-button-color);
 }
 
 .GitHubButton {
-    background: #B08968;
+    background: var(--secondary-button-color);
 }
 
 .LinkedInButton::after, .GitHubButton::after {

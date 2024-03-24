@@ -19,7 +19,7 @@ h2{
 .modalContent {
     top: 100px;
     position: relative;
-    background-color: white;
+    background-color: var(--modal-background-color);
     background-image: url('../assets/modal_background.png');
     background-size: cover;
     background-repeat: no-repeat;

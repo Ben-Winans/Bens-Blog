@@ -7,7 +7,7 @@
     align-items: center;
     gap: 50px;
     flex-shrink: 0;
-    background-color: #E6CCB2;
+    background-color: var(--secondary-color);
 }
 
 .skillsTitle {
@@ -16,12 +16,13 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    color: black;
+    color: var(--secondary-text-color);
     margin-bottom: 0px;
 }
 
 .skillsColumn h3, .skillsColumn p {
     text-align: center;
+    color: var(--secondary-text-color);
 }
 
 .skillsContent {
@@ -58,8 +59,8 @@
     padding: 0px 25px 0px 25px;
     border-radius: 5px;
     border: 1px solid #838383;
-    background: #B08968;
-    color: #EDE0D4;
+    background: var(--secondary-button-color);
+    color: var(--primary-button-text-color);
     font-family: "Anonymous Pro";
     font-size: 32px;
     font-style: normal;
