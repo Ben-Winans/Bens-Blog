@@ -26,16 +26,16 @@ const About = () => {
                     <p>
                         I'm looking for a new role, are you hiring? 
                         <span> 
-                            <a href="#contact"> <b> Let's Chat</b></a> 
+                            <a href="#contact"> <b><u>Let's Chat</u></b></a> 
                         </span> 
                     </p>
 
                 </div>
             </div>
             <div className={styles.rightSection}>
-                {/* <div className={styles.imageCard}>
-                    <img src={aboutImage} alt="Me and my beloved cat sushi" />
-                </div> */}
+                <div className={styles.imageCard}>
+                    <img src={aboutImage} alt="Me in a suit infront of Florida trees" />
+                </div>
                 <div className={styles.aboutButtonRow}>
                     <a href="https://www.linkedin.com/in/ben-winans/" target="_blank" rel="noopener noreferrer">
                         <button className={styles.LinkedInButton}>LinkedIn</button>
